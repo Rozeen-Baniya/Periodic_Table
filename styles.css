@@ -1,0 +1,108 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ddaa70, #83a944);
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+h1 {
+  margin: 20px 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* Periodic Table Styling */
+#periodic-table {
+  display: grid;
+  grid-template-columns: repeat(18, 1fr); /* 18 columns for periodic table */
+  gap: 5px;
+  max-width: 95vw;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.element {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.element strong {
+  font-size: 1.2rem;
+}
+
+.element small {
+  display: block;
+  font-size: 0.8rem;
+  color: #e3e3e3;
+}
+
+.element:hover {
+  box-shadow: 0 0 15px 5px rgba(61, 248, 4, 0.5);
+  transform: scale(1.1);
+}
+
+.element:active {
+  box-shadow: 0 0 20px 10px rgba(74, 72, 72, 0.7);
+}
+
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #f4ffdc;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px 10px rgba(180, 243, 84, 0.5);
+  text-align: left;
+  max-width: 400px;
+  width: 90%;
+}
+
+.modal-content h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #363a57;
+}
+
+.modal-content p {
+  margin: 10px 0;
+}
+
+.modal-content a {
+  color: #e37676;
+  text-decoration: none;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #e37676;
+  transition: transform 0.2s ease;
+}
+
+.close-button:hover {
+  transform: scale(1.2);
+}
